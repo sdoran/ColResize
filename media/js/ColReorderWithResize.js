@@ -789,9 +789,11 @@
             oState.ColReorder = [];
 
             /* Resizing */
-            for ( i=0, iLen=columns.length ; i<iLen ; i++ )
-            {
-                oState.columns[i].width = columns[i].width;
+            if( oState.columns ) {
+                for ( i=0, iLen=columns.length ; i<iLen ; i++ )
+                {
+                    oState.columns[i].width = columns[i].width;
+                }
             }
 
             /* Sorting */
